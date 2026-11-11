@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Educational Content</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1449124723758691');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1449124723758691&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+ 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#071126;
+    color:#ffffff;
+}
+
+.container{
+    width:100%;
+    max-width:720px;
+    margin:0 auto;
+    padding:20px 18px 35px;
+}
+
+/* ================= TOP BADGE ================= */
+
+.top{
+    text-align:center;
+}
+
+.live{
+    display:inline-block;
+    padding:10px 20px;
+    border:1px solid #087f72;
+    border-radius:30px;
+    color:#19d5b5;
+    background:rgba(12,180,155,.08);
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:.3px;
+    margin-bottom:24px;
+}
+
+.live span{
+    color:#00e6b7;
+    margin-right:6px;
+}
+
+/* ================= PROFILE ================= */
+
+.profile{
+    text-align:center;
+}
+
+.profile-image{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto;
+    border:5px solid #e7a824;
+    box-shadow:
+        0 0 15px rgba(245,178,35,.35),
+        0 0 30px rgba(245,178,35,.15);
+}
+
+.title{
+    font-size:31px;
+    line-height:1.15;
+    font-weight:700;
+    margin:25px 0 16px;
+    text-transform:uppercase;
+}
+
+.sub-badge{
+    display:inline-block;
+    padding:10px 18px;
+    border:1px solid #28334c;
+    background:#101a30;
+    border-radius:25px;
+    color:#d8deeb;
+    font-size:16px;
+}
+
+/* ================= MAIN CARD ================= */
+
+.card{
+    margin-top:25px;
+    padding:27px 25px;
+    border-radius:28px;
+    background:#0d172b;
+    border:1px solid #26334d;
+    box-shadow:0 10px 35px rgba(0,0,0,.20);
+}
+
+.card-title{
+    color:#f6b52c;
+    text-align:center;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:24px;
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:18px 0;
+    color:#e8edf7;
+    font-size:18px;
+}
+
+.icon{
+    width:44px;
+    height:44px;
+    min-width:44px;
+    border-radius:10px;
+    background:#172238;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.notice{
+    margin-top:22px;
+    padding:13px 15px;
+    border-left:4px solid #f4b321;
+    border-radius:6px;
+    background:#22252e;
+    color:#ffe27a;
+    font-size:15px;
+    font-weight:600;
+}
+
+/* ================= INFO CARD ================= */
+
+.info-card{
+    margin-top:25px;
+    padding:28px 22px;
+    text-align:center;
+    border-radius:27px;
+    background:#0d172b;
+    border:1px solid #26334d;
+}
+
+.info-title{
+    font-size:21px;
+    font-weight:700;
+    margin-bottom:13px;
+}
+
+.info-text{
+    color:#aeb8cb;
+    font-size:16px;
+    line-height:1.55;
+}
+
+/* ================= BUTTON ================= */
+
+.join{
+    display:block;
+    width:100%;
+    margin-top:27px;
+    padding:20px 15px;
+    border-radius:23px;
+    text-align:center;
+    text-decoration:none;
+    color:#ffffff;
+    font-size:22px;
+    font-weight:700;
+    background:linear-gradient(135deg,#2878ff,#164edc);
+    box-shadow:0 8px 25px rgba(25,91,235,.40);
+    transition:.2s;
+}
+
+.join:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 30px rgba(25,91,235,.55);
+}
+
+/* ================= FREE TEXT ================= */
+
+.free{
+    text-align:center;
+    color:#aeb7c8;
+    font-size:16px;
+    margin-top:15px;
+}
+
+/* ================= FOOTER ================= */
+
+.quote{
+    text-align:center;
+    margin:38px 10px 10px;
+    color:#c2c7d1;
+    font-size:15px;
+    font-style:italic;
+    line-height:1.6;
+}
+
+.footer{
+    text-align:center;
+    color:#778197;
+    font-size:13px;
+    margin-top:10px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:500px){
+
+    .container{
+        padding:18px 14px 28px;
+    }
+
+    .profile-image{
+        width:155px;
+        height:155px;
+    }
+
+    .title{
+        font-size:27px;
+    }
+
+    .sub-badge{
+        font-size:14px;
+    }
+
+    .card{
+        padding:23px 18px;
+    }
+
+    .card-title{
+        font-size:18px;
+    }
+
+    .feature{
+        font-size:16px;
+    }
+
+    .join{
+        font-size:20px;
+        padding:19px 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <!-- ================= TOP ================= -->
+
+    <div class="top">
+
+        <div class="live">
+            <span>●</span> Live Telegram Chennal
+        </div>
+
+    </div>
+
+
+    <!-- ================= PROFILE ================= -->
+
+    <div class="profile">
+
+        <!--
+        IMPORTANT:
+        नीचे YOUR_CLOUDINARY_IMAGE_URL की जगह        -->
+
+        <img
+            class="profile-image"
+            src="https://i.ibb.co/ZRxfpYf2/Whats-App-Image-2026-11-11-at-11-47-58-AM.jpg"
+            alt="Profile Image"
+        >
+
+        <h1 class="title">
+            TRADE WITH MUNAAF
+        </h1>
+
+        <div class="sub-badge">
+            📈 Stock Market Education ✓
+        </div>
+
+    </div>
+<!-- ================= TELEGRAM BUTTON ================= -->
+
+    <a
+        class="join"
+        href="https://t.me/+agLN-sJL9Hs3Y2Fl"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        🚀 JOIN TELEGRAM CHANNEL
+    </a>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <div class="card">
+
+        <div class="card-title">
+            NIFTY • BANKNIFTY & STOCK MARKET
+        </div>
+
+
+        <div class="feature">
+
+            <div class="icon">
+                📈
+            </div>
+
+            <div>
+                Live Market Analysis
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="icon">
+                📊
+            </div>
+
+            <div>
+                Market Levels & Analysis
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="icon">
+                🎯
+            </div>
+
+            <div>
+                Intraday Trade Setups
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="icon">
+                📅
+            </div>
+
+            <div>
+                Daily Market Updates
+            </div>
+
+        </div>
+
+
+        <div class="notice">
+            ⚡ FREE DEMO / EDUCATIONAL CONTENT ✅
+        </div>
+
+    </div>
+
+
+    <!-- ================= INFO ================= -->
+
+    <div class="info-card">
+
+        <div class="info-title">
+            🎙️ Live Stock Market Analysis
+        </div>
+
+        <div class="info-text">
+            Get market analysis, Nifty & BankNifty levels,
+            educational insights and intraday market updates
+            directly on Telegram.
+        </div>
+
+    </div>
+
+
+    <!-- ================= TELEGRAM BUTTON ================= -->
+
+    <a
+        class="join"
+        href="https://t.me/+agLN-sJL9Hs3Y2Fl"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        🚀 JOIN TELEGRAM CHANNEL
+    </a>
+
+
+    <div class="free">
+        🔒 100% Free • Join Anytime
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <div class="quote">
+        📝 "Trade with discipline, manage your risk,
+        and stay consistent in the market."
+    </div>
+
+
+    <div class="footer">
+        © 2026 YOUR NAME • Educational Content
+    </div>
+
+</div>
+
+</body>
+</html>
